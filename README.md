@@ -14,8 +14,6 @@ El backend está construido con Flask y usa una base de datos PostgreSQL para al
 
 ### Frontend
 
-El frontend está construido con un framework moderno de JavaScript (ej. Angular, React). Se encarga de las siguientes tareas:
-
 1. **Formulario de Creación de Ítems**: Permite a los usuarios enviar un formulario para crear nuevos ítems.
 2. **Listado de Ítems**: Muestra una lista de todos los ítems almacenados en el backend, incluyendo sus nombres e imágenes.
 
