@@ -1,5 +1,17 @@
-docker-compose.yml
-./backend/Dockerfile
-./frontend/Dockerfile
-./nginx/Dockerfile
+# Ignorar todos los Dockerfile en cualquier carpeta del proyecto
+**/Dockerfile
 
+# Ignorar el archivo docker-compose.yml
+docker-compose.yml
+
+# Ignorar archivos y carpetas de configuraciones de entorno y compilación
+node_modules/
+.env
+*.log
+
+# Ignorar archivos compilados de Python
+*.pyc
+__pycache__/
+
+# Ignorar archivos innecesarios en la raíz del proyecto
+*.env
