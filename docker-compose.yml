@@ -1,0 +1,42 @@
+services:
+  app:
+    build: ./backend
+    container_name: back_container
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_DB=database   
+      - DB_HOST=db
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    networks:
+      - conexion
+  db:
+    image: postgres:latest
+    container_name: bd_postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_DB=database
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+    networks:
+      - conexion
+  nginx:
+    build: ./frontend
+    container_name: container_front
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    networks:
+      - conexion
+networks:
+  conexion:
+    driver: bridge
+volumes:
+  postgres_db:
