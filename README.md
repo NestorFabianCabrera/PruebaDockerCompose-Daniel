@@ -15,7 +15,7 @@ El backend está construido con Flask y usa una base de datos PostgreSQL para al
 ### Frontend
 
 1. **Formulario de Creación de Ítems**: Permite a los usuarios enviar un formulario para crear nuevos ítems.
-2. **Listado de Ítems**: Muestra una lista de todos los ítems almacenados en el backend, incluyendo sus nombres e imágenes.
+2. **Listado de Ítems**: Muestra una lista de todos los ítems almacenados en el backend, incluyendo sus nombres.
 
 ## Instrucciones para la Prueba
 
