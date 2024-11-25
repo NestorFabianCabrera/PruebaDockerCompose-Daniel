@@ -1,0 +1,5 @@
+docker-compose.yml
+./backend/Dockerfile
+./frontend/Dockerfile
+./nginx/Dockerfile
+
